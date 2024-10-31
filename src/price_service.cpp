@@ -34,6 +34,21 @@ float YahooFinancePriceService::getPrice() {
   return price;
 }
 
+/**
+ * Generates a simulated price using a random walk algorithm.
+ *
+ * The price follows a random walk pattern where:
+ * 1. Random change is generated between -2.0 and +2.0
+ * 2. Change is applied to last price
+ * 3. Price is prevented from going negative
+ *
+ * Formula: change = (random(-100,101) / 100.0) * 2.0
+ * - Random value between -100 and 100, divided by 100 gives -1.0 to 1.0
+ * - Multiplied by 2.0 gives final range of -2.0 to +2.0
+ *
+ * @return A simulated stock price that randomly walks from the previous price,
+ *         with a minimum value of 0.0
+ */
 float TestPriceService::getPrice() {
   float change = (random(-100, 101) / 100.0f) * 2.0f;
   lastPrice += change;
