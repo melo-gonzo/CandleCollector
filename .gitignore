@@ -1,3 +1,12 @@
+# Other Files
+src/credentials.h 
+print_contents.py
+
+# Dots
+.DS_Store
+.pio 
+.vscode 
+
 # Prerequisites
 *.d
 
