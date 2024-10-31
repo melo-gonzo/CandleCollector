@@ -139,6 +139,15 @@ The system provides detailed status updates via Serial, including:
 
 ## Contributing
 
+Create a fork of the repo, and hack away! If submitting a pull request, please insure to install `pre-commit`, or the PR will fail.
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
+After this, `pre-commit` hooks will be run to format code. 
+
 Feel free to submit issues and pull requests for:
 - Additional features
 - Bug fixes
