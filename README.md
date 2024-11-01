@@ -1,7 +1,7 @@
 # CandleCollector
 A real-time stock price tracker that collects candlestick data using Yahoo Finance API, with configurable collection intervals and market hours enforcement. While not perfectly *real-time*, this implementation will provide granular enough data to produce approximately the same candles as the main stream providers. This API is not meant for high-frequency collection, and is *currently* limited in its functionality and scope. 
 
-Contrary to many other YF-API interfaces which collect historical data, this project collects intraday price data and aggregates the data into a candle over a specified time interval. A candle is a simple data structure holding the open, high, low and closing price of a stock over a predefined interval.
+Contrary to many other Yahoo Finance interfaces which collect historical data, this project collects intraday price data and aggregates the data into a candle over a specified time interval. A candle is a simple data structure holding the open, high, low and closing price of a stock over a predefined interval.
 
 CandleCollector is originally designed to work in the ESP32 ecosystem, as these devices provide a small form factor, low power, wifi-connected interface to run this repetitive and low compute task.
 
